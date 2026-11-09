@@ -9,86 +9,83 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
         }
 
         body {
-            background: #090d16;
+            background-color: #090d16;
             color: #f8fafc;
             min-height: 100vh;
             padding: 20px 15px;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
         }
 
         .container {
             width: 100%;
-            max-width: 520px;
+            max-width: 500px;
             margin: 0 auto;
         }
 
-        /* كارت التعريف الرئيسي */
+        /* الكارت الرئيسي */
         .profile-card {
-            background: linear-gradient(145deg, #131b2e, #0f172a);
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            border-radius: 24px;
-            padding: 35px 20px 25px;
+            background: #131b2e;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 20px;
+            padding: 30px 20px;
             text-align: center;
-            margin-bottom: 25px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            position: relative;
+            margin-bottom: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
         }
 
-        /* شعار ZB المتوهج */
+        /* لوجو ZB الأسطوري */
         .logo-zb {
-            width: 95px;
-            height: 95px;
-            border-radius: 22px;
+            width: 85px;
+            height: 85px;
+            border-radius: 20px;
             background: linear-gradient(135deg, #06b6d4, #7c3aed);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 18px;
-            font-size: 2.5rem;
+            margin: 0 auto 15px;
+            font-size: 2.2rem;
             font-weight: 900;
             color: #ffffff;
-            box-shadow: 0 0 25px rgba(6, 182, 212, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.25);
-            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         .name {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 800;
             color: #38bdf8;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
 
         .bio {
             color: #94a3b8;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.5;
             margin-bottom: 20px;
         }
 
-        /* شريط الإحصائيات الفخم */
+        /* الإحصائيات مرتبة بدقة */
         .stats-bar {
             display: flex;
             justify-content: space-around;
-            background: rgba(15, 23, 42, 0.7);
+            background: #0b0f19;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 12px 10px;
-            margin-top: 15px;
+            border-radius: 12px;
+            padding: 10px;
         }
 
         .stat-item {
             text-align: center;
+            flex: 1;
         }
 
         .stat-value {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 800;
             color: #38bdf8;
         }
@@ -96,77 +93,72 @@
         .stat-label {
             font-size: 0.75rem;
             color: #64748b;
+            margin-top: 2px;
         }
 
-        /* الأقسام والأزرار */
+        /* عناوين الأقسام */
         .section-header {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #38bdf8;
-            margin: 22px 0 12px;
+            margin: 20px 0 10px;
             padding-right: 8px;
             border-right: 3px solid #38bdf8;
             font-weight: 700;
         }
 
+        /* الأزرار الاحترافية */
         .btn-link {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background: #111827;
             color: #f8fafc;
-            border: 1px solid rgba(56, 189, 248, 0.25);
-            padding: 15px 18px;
-            border-radius: 16px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 14px 18px;
+            border-radius: 14px;
             text-decoration: none;
             font-weight: 700;
             font-size: 0.95rem;
-            margin-bottom: 12px;
-            transition: transform 0.2s, border-color 0.2s;
+            margin-bottom: 10px;
+            transition: all 0.2s;
         }
 
         .btn-link:active {
-            transform: scale(0.98);
+            background: #1f2937;
             border-color: #38bdf8;
         }
 
         .btn-content {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
-        .svg-icon {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
-            flex-shrink: 0;
-        }
-
-        /* شبكة الخدمات */
+        /* شبكة الخدمات المصغرة */
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .service-card {
             background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 12px;
             text-align: right;
         }
 
         .service-title {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: bold;
             color: #a855f7;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .service-desc {
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             color: #64748b;
         }
 
@@ -174,7 +166,7 @@
             text-align: center;
             color: #475569;
             font-size: 0.8rem;
-            margin-top: 30px;
+            margin-top: 25px;
             padding-top: 15px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -190,25 +182,23 @@
             <h1 class="name">زينو | ZB Tech</h1>
             <p class="bio">صانع محتوى تقني • مطور تطبيقات ومواقع • مهندس حلول رقمية مبتكرة</p>
             
-            <!-- إحصائيات 137K+ -->
+            <!-- الإحصائيات -->
             <div class="stats-bar">
                 <div class="stat-item">
-                    <div class="stat-value">137K+</div>
-                    <div class="stat-label">متابع تقني</div>
+                    <div class="stat-value">PRO</div>
+                    <div class="stat-label">حلول برمجة</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">100%</div>
                     <div class="stat-label">أدوات مجانية</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">PRO</div>
-                    <div class="stat-label">حلول برمجة</div>
+                    <div class="stat-value">137K+</div>
+                    <div class="stat-label">متابع تقني</div>
                 </div>
             </div>
         </div>
 
-        <!-- زر تيك توك الرئيسي -->
-        <a href="https://tiktok.com/@zinozin2026" target="_blank" class="btn-link" style="background: linear-gradient(135deg, rgba(255,0,80,0.2), rgba(6,182,212,0.2)); border-color: rgba(255,0,80,0.5);">
-            <div class="btn-content">
-                <svg class="svg-icon" style="color:#ff0050" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.39h.09V9.06h-.09a6.34 6.34 0 1 0 5
-                                                                                    
+        <!-- زر تيك توك -->
+        <a href="
+            
