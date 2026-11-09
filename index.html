@@ -27,7 +27,6 @@
             margin: 0 auto;
         }
 
-        /* الكارت الرئيسي */
         .profile-card {
             background: #131b2e;
             border: 1px solid rgba(56, 189, 248, 0.25);
@@ -38,7 +37,6 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
         }
 
-        /* لوجو ZB الأسطوري */
         .logo-zb {
             width: 85px;
             height: 85px;
@@ -69,7 +67,6 @@
             margin-bottom: 20px;
         }
 
-        /* الإحصائيات مرتبة بدقة */
         .stats-bar {
             display: flex;
             justify-content: space-around;
@@ -96,7 +93,6 @@
             margin-top: 2px;
         }
 
-        /* عناوين الأقسام */
         .section-header {
             font-size: 1rem;
             color: #38bdf8;
@@ -106,7 +102,6 @@
             font-weight: 700;
         }
 
-        /* الأزرار الاحترافية */
         .btn-link {
             display: flex;
             align-items: center;
@@ -120,12 +115,6 @@
             font-weight: 700;
             font-size: 0.95rem;
             margin-bottom: 10px;
-            transition: all 0.2s;
-        }
-
-        .btn-link:active {
-            background: #1f2937;
-            border-color: #38bdf8;
         }
 
         .btn-content {
@@ -134,7 +123,6 @@
             gap: 10px;
         }
 
-        /* شبكة الخدمات المصغرة */
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -176,13 +164,11 @@
 
     <div class="container">
 
-        <!-- بطاقة التعريف واللوجو -->
         <div class="profile-card">
             <div class="logo-zb">ZB</div>
             <h1 class="name">زينو | ZB Tech</h1>
             <p class="bio">صانع محتوى تقني • مطور تطبيقات ومواقع • مهندس حلول رقمية مبتكرة</p>
             
-            <!-- الإحصائيات -->
             <div class="stats-bar">
                 <div class="stat-item">
                     <div class="stat-value">PRO</div>
@@ -199,6 +185,41 @@
             </div>
         </div>
 
-        <!-- زر تيك توك -->
-        <a href="
-            
+        <a href="https://tiktok.com/@zinozin2026" target="_blank" class="btn-link" style="background: linear-gradient(135deg, rgba(255,0,80,0.15), rgba(6,182,212,0.15)); border-color: rgba(255,0,80,0.4);">
+            <div class="btn-content">
+                <span>🎵</span>
+                <span>انضم إلينا على تيك توك</span>
+            </div>
+            <span>←</span>
+        </a>
+
+        <div class="section-header">المنتجات والدلائل الرقمية</div>
+        <a href="https://wa.me/213556970625?text=سلام%20زينو،%20أنا%20مهتم%20بدليل%20صناعة%20المحتوى%20وأريد%20حجز%20نسختي" target="_blank" class="btn-link">
+            <div class="btn-content">
+                <span>📘</span>
+                <span>حجز كتاب دليل صناعة المحتوى الذكي</span>
+            </div>
+            <span>←</span>
+        </a>
+
+        <div class="section-header">الخدمات التي أقدمها</div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-title">⚡ تطوير المواقع</div>
+                <div class="service-desc">بناء مواقع وتطبيقات ويب سريعة.</div>
+            </div>
+            <div class="service-card">
+                <div class="service-title">🎬 صناعة المحتوى</div>
+                <div class="service-desc">شروحات تقنية وأدوات ذكاء.</div>
+            </div>
+        </div>
+
+        <div class="section-header">المشاريع والأدوات التقنية</div>
+        <a href="https://github.com/zindz255-eng" target="_blank" class="btn-link">
+            <div class="btn-content">
+                <span>💻</span>
+                <span>استكشف مشاريع GitHub</span>
+            </div>
+            <span>←</span>
+        </a>
+        
